@@ -6,4 +6,6 @@ RUN git clone https://github.com/ppolyzos/material-dashboard-angular && cd mater
 
 ADD ng-serve.sh /home/material-dashboard-angular
 
+RUN chmod a+x /home/material-dashboard-angular/ng-serve.sh
+
 ENTRYPOINT [ "/home/material-dashboard-angular/ng-serve.sh" ]
