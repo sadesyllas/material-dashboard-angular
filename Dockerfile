@@ -8,4 +8,6 @@ ADD ng-serve.sh /home/material-dashboard-angular
 
 RUN chmod a+x /home/material-dashboard-angular/ng-serve.sh
 
+ENV WAPORT=80
+
 ENTRYPOINT [ "/home/material-dashboard-angular/ng-serve.sh" ]
